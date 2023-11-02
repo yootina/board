@@ -19,5 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # articles(앱이름) 폴더 내에 있는 urls.py로 가라고 하는 것
+    # include라는 함수를 쓰려면 import include하라고 명령하기
     path('articles/', include('articles.urls')),
 ]
